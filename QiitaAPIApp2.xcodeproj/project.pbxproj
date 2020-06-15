@@ -3,19 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35317AF310E77858F076EC86 /* Pods_QiitaAPIApp2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F028371F7D4FAEE43A2C0E69 /* Pods_QiitaAPIApp2.framework */; };
 		E5429846249660DC0094FCCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5429845249660DC0094FCCF /* AppDelegate.swift */; };
 		E5429848249660DC0094FCCF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5429847249660DC0094FCCF /* SceneDelegate.swift */; };
 		E542984A249660DC0094FCCF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5429849249660DC0094FCCF /* ViewController.swift */; };
 		E542984D249660DC0094FCCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E542984B249660DC0094FCCF /* Main.storyboard */; };
 		E542984F249660DD0094FCCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E542984E249660DD0094FCCF /* Assets.xcassets */; };
 		E5429852249660DD0094FCCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5429850249660DD0094FCCF /* LaunchScreen.storyboard */; };
+		E542985A249723090094FCCF /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5429859249723090094FCCF /* WebViewController.swift */; };
+		E542985F249772350094FCCF /* Qiita.swift in Sources */ = {isa = PBXBuildFile; fileRef = E542985E249772350094FCCF /* Qiita.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D614F5D4D775F1A493EB0B6E /* Pods-QiitaAPIApp2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QiitaAPIApp2.debug.xcconfig"; path = "Target Support Files/Pods-QiitaAPIApp2/Pods-QiitaAPIApp2.debug.xcconfig"; sourceTree = "<group>"; };
 		E5429842249660DC0094FCCF /* QiitaAPIApp2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QiitaAPIApp2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5429845249660DC0094FCCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5429847249660DC0094FCCF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,10 @@
 		E542984E249660DD0094FCCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5429851249660DD0094FCCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5429853249660DD0094FCCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5429859249723090094FCCF /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		E542985E249772350094FCCF /* Qiita.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Qiita.swift; sourceTree = "<group>"; };
+		E66A872CB216C64202B84E9E /* Pods-QiitaAPIApp2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QiitaAPIApp2.release.xcconfig"; path = "Target Support Files/Pods-QiitaAPIApp2/Pods-QiitaAPIApp2.release.xcconfig"; sourceTree = "<group>"; };
+		F028371F7D4FAEE43A2C0E69 /* Pods_QiitaAPIApp2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QiitaAPIApp2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35317AF310E77858F076EC86 /* Pods_QiitaAPIApp2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D8DA49DA0D536101D45E9C47 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F028371F7D4FAEE43A2C0E69 /* Pods_QiitaAPIApp2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E0D77491DBD9DDB12C61DCE3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D614F5D4D775F1A493EB0B6E /* Pods-QiitaAPIApp2.debug.xcconfig */,
+				E66A872CB216C64202B84E9E /* Pods-QiitaAPIApp2.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E5429839249660DC0094FCCF = {
 			isa = PBXGroup;
 			children = (
 				E5429844249660DC0094FCCF /* QiitaAPIApp2 */,
 				E5429843249660DC0094FCCF /* Products */,
+				E0D77491DBD9DDB12C61DCE3 /* Pods */,
+				D8DA49DA0D536101D45E9C47 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +84,41 @@
 		E5429844249660DC0094FCCF /* QiitaAPIApp2 */ = {
 			isa = PBXGroup;
 			children = (
-				E5429845249660DC0094FCCF /* AppDelegate.swift */,
-				E5429847249660DC0094FCCF /* SceneDelegate.swift */,
-				E5429849249660DC0094FCCF /* ViewController.swift */,
-				E542984B249660DC0094FCCF /* Main.storyboard */,
-				E542984E249660DD0094FCCF /* Assets.xcassets */,
-				E5429850249660DD0094FCCF /* LaunchScreen.storyboard */,
+				E542985D249772040094FCCF /* Model */,
+				E542985C249771FC0094FCCF /* View */,
+				E542985B249771F10094FCCF /* Controller */,
 				E5429853249660DD0094FCCF /* Info.plist */,
 			);
 			path = QiitaAPIApp2;
+			sourceTree = "<group>";
+		};
+		E542985B249771F10094FCCF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E5429845249660DC0094FCCF /* AppDelegate.swift */,
+				E5429847249660DC0094FCCF /* SceneDelegate.swift */,
+				E5429849249660DC0094FCCF /* ViewController.swift */,
+				E5429859249723090094FCCF /* WebViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E542985C249771FC0094FCCF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E542984B249660DC0094FCCF /* Main.storyboard */,
+				E542984E249660DD0094FCCF /* Assets.xcassets */,
+				E5429850249660DD0094FCCF /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E542985D249772040094FCCF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E542985E249772350094FCCF /* Qiita.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +128,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E5429856249660DD0094FCCF /* Build configuration list for PBXNativeTarget "QiitaAPIApp2" */;
 			buildPhases = (
+				BF944CC644BCBA898D40EDCE /* [CP] Check Pods Manifest.lock */,
 				E542983E249660DC0094FCCF /* Sources */,
 				E542983F249660DC0094FCCF /* Frameworks */,
 				E5429840249660DC0094FCCF /* Resources */,
+				508EFA13D767B9A4303D16F5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +189,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		508EFA13D767B9A4303D16F5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QiitaAPIApp2/Pods-QiitaAPIApp2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QiitaAPIApp2/Pods-QiitaAPIApp2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QiitaAPIApp2/Pods-QiitaAPIApp2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF944CC644BCBA898D40EDCE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QiitaAPIApp2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E542983E249660DC0094FCCF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -141,6 +239,8 @@
 				E542984A249660DC0094FCCF /* ViewController.swift in Sources */,
 				E5429846249660DC0094FCCF /* AppDelegate.swift in Sources */,
 				E5429848249660DC0094FCCF /* SceneDelegate.swift in Sources */,
+				E542985F249772350094FCCF /* Qiita.swift in Sources */,
+				E542985A249723090094FCCF /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +382,7 @@
 		};
 		E5429857249660DD0094FCCF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D614F5D4D775F1A493EB0B6E /* Pods-QiitaAPIApp2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -294,12 +395,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kazu8.QiitaAPIApp2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		E5429858249660DD0094FCCF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E66A872CB216C64202B84E9E /* Pods-QiitaAPIApp2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -312,7 +414,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kazu8.QiitaAPIApp2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
