@@ -52,7 +52,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         let imageView = cell.viewWithTag(3) as! UIImageView
         let imageURL = URL(string: qiitaArry[indexPath.row].profileImageString)
         imageView.sd_setImage(with: imageURL, completed: nil)
-        imageView.layer.cornerRadius = 40
+        imageView.layer.cornerRadius = 38
         
         cell.selectionStyle = .none
         
